@@ -2,6 +2,8 @@
 
 **A portable NFC tag launcher for Windows, built around the ACR122U USB reader.**
 
+![TagToolSH! Live Scanner tab](docs/01_main_window.jpg)
+
 TagToolSH! reads and writes NFC tags, launches games, applications, and services with a single tap, and can automatically terminate launched processes when you lift the tag off the reader. It's a self-contained toolkit you can carry on a USB stick and run on any Windows machine.
 
 ## Table of Contents
@@ -185,6 +187,8 @@ Buttons at the bottom:
 - **Save to Tag Library** - assign a custom action to this UID.
 - **Encode / Overwrite Tag** - jump to the writer tab with this tag's data pre-filled.
 
+![TagToolSH! Live Scanner tab](docs/01_main_window.jpg)
+
 ### Writing Tags (Tag Studio)
 
 The Tag Studio has five tabs, one per action type.
@@ -201,6 +205,8 @@ The Tag Studio has five tabs, one per action type.
 
 The **"Kill launched process when this tag is removed"** checkbox writes a secondary NDEF record containing `kill=1`. When this tag is read back, the app knows to track the launched process for a later kill. Spotify tags ignore this setting by design.
 
+![Tag Studio / Writer tab](docs/02_tag_studio.jpg)
+
 ### The Tag Library
 
 The Tag Library maps UIDs to actions. This is how you use read-only tags, key fobs, or hotel cards.
@@ -213,6 +219,8 @@ The Tag Library maps UIDs to actions. This is how you use read-only tags, key fo
 Columns: Tag Name, UID, Type, Target, Args, Kill, Auto-Detected, Last Used.
 
 The edit dialog also has a **Manual process name to kill on card removal** field. If set, this is used directly and auto-detection is skipped. Set to `none` or `off` to disable tracking entirely for this tag. The dialog also has the **Kill launched process when this tag is removed** checkbox, which is the library equivalent of the writer checkbox.
+
+![Tag Library tab](docs/03_library.jpg)
 
 ### Kill on Tag Removal
 
@@ -273,6 +281,8 @@ When a kill succeeds, the app can display a fullscreen image named `bsod.png`, s
 - Toggleable in Settings, with a configurable timeout.
 
 If `bsod.png` isn't present, the effect silently does nothing and a status message explains why.
+
+![BSOD Easter egg](docs/05_bsod_easter_egg.jpg)
 
 ### System Tray and Autostart
 
@@ -338,6 +348,8 @@ Three rapid beeps always play on write failure, regardless of the setting.
 | Minimize to system tray when minimized or closed | On | Enables tray behavior. |
 | Start with the main window maximized | On | Opens maximized. |
 | Launch automatically on Windows startup | Off | Registry-based autostart. |
+
+![Settings tab](docs/04_settings.jpg)
 
 ## Supported Hardware
 
