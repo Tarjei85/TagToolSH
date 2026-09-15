@@ -1,0 +1,4 @@
+pyscard>=2.3.0
+ndeflib>=0.3.3
+PySide6>=6.11.0
+psutil>=5.9.0

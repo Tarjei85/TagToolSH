@@ -1,0 +1,62 @@
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ----- Virtual environments -----
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# ----- PyInstaller -----
+build/
+dist/
+*.spec.bak
+
+# ----- Runtime data (personal, not for distribution) -----
+app_data/config.json
+app_data/tags_db.json
+app_data/logs/
+app_data/python/
+app_data/libs/
+app_data/INSTALL_FAILED.txt
+
+# Keep these tracked
+!app_data/icon.ico
+!app_data/bsod.png
+
+# ----- IDE / Editors -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ----- Debug leftovers -----
+test_bsod.py
+test_bsod_output.txt
+out.txt
+fix_*.ps1
+autodetect_debug.txt
+psutil_check.txt
